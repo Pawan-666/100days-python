@@ -1,6 +1,7 @@
-name = input("Your first name: ")
-# print(len(name))
-j = 0
-for i in name:
-    j = j + 1;
-print(j)
+a = input("a: ")
+b = input("b: ")
+print(a, b)
+x = a
+a = b
+b = x
+print(a, b)
