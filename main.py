@@ -1,14 +1,5 @@
-print("123" + "345")
-print(int("123") + int("345"))
-print(12_3 + 345)     # _ can be used as , placeholder for readability purpose
-print(123 + 345)
-print(str(123) + str(123))
-print(123 + float(123.50))
-
-# 123345
-# 468
-# 468
-# 468
-# 123123
-# 246.5
+height = float(input("Enter your height in meters: "))
+weight = float(input("Enter your wieght in kg: "))
+bmi = weight/(height ** 2)
+print(f'Your body mass index is {int(bmi)}')
 
