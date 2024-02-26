@@ -1,6 +1,23 @@
-year = int(input("Which year you want to check? "))
+height = int(input("Enter your height: "))
+total_bill = 0
 
-if (year % 4 == 0) and (year % 100 == 0) and (year % 400 == 0):
-    print("It is a leap year")
+if height > 120:
+    print("Yes, you can ride")
+    age = int(input("Enter your age: "))
+    if age < 12:
+         total_bill = 5 
+
+    elif age < 18:
+         total_bill = 7 
+
+    else: 
+        total_bill = 12 
+
+    want_photos = input("You want photos too, yes or no: ")
+    if want_photos == "yes":
+        total_bill += 3
+
+    print(f"Your total bill is {total_bill}.")
+
 else:
-    print("It isn't a leap year")
+    print("Can't ride")
