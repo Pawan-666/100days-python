@@ -1,23 +1,24 @@
-height = int(input("Enter your height: "))
-total_bill = 0
-
-if height > 120:
-    print("Yes, you can ride")
-    age = int(input("Enter your age: "))
-    if age < 12:
-         total_bill = 5 
-
-    elif age < 18:
-         total_bill = 7 
-
-    else: 
-        total_bill = 12 
-
-    want_photos = input("You want photos too, yes or no: ")
-    if want_photos == "yes":
-        total_bill += 3
-
-    print(f"Your total bill is {total_bill}.")
-
+print("Welcome to PYTHON PIZZA DELIVERIES!")
+size = input("What size pizza do you want? S, M, or L : ")
+bill = 0
+if size == "S":
+    bill = 15
+elif size == "M":
+    bill = 20
+elif size == "L":
+    bill = 25
 else:
-    print("Can't ride")
+    print("Please enter only S, M or L")
+
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+extra_cheese = input("Do you want extra cheese? Y or N ")
+if extra_cheese == "Y":
+    bill += 1
+
+print(f"Your final bill is: ${bill}.")
