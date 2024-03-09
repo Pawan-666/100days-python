@@ -1,11 +1,16 @@
-import random
+row1 = ["😃", "😃", "😃"]
+row2 = ["🥲", "🥲", "🥲"]
+row3 = ["😂", "😂", "😂"]
 
-names_string = input("Give everybody's name, seperated by a comma. ")
-names = names_string.split(", ")
-print(names)
+map = [row1, row2, row3]
+print(map)
+print(f"{row1}\n{row2}\n{row3}")
 
-random_name = random.choice(names)
-# random_name = random.randint(0, len(names) - 1)
-print(random_name)
-# print(f"{names[random_name]} is going to pay the bill")
-print(f"{random_name} is going to pay the bill")
+position = input("where do you want to put the treasure? ")
+row = int(position[0]) - 1
+column = int(position[1]) - 1
+
+# new_map = map[row]
+# new_map[column] = "x"
+map[row][column] = "X "
+print(f"{row1}\n{row2}\n{row3}")
