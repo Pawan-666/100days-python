@@ -1,12 +1,8 @@
-# sum = 0
-# for i in range(0,101,2):
-#     # print(i)
-#     sum += i
-#     # print(sum)
-
-# print(sum)
-
-# list1 = range(0,101,2)
-# print(sum(list1))
-
-print(sum(range(0,101,2)))
+for i in range(1,100):
+    if (i % 3 == 0) and (i % 5 == 0):
+        i = "fizzbuzz"
+    elif i % 3 == 0:
+        i = "fizz"
+    elif i % 5 == 0:
+        i = "buzz"
+    print(i)
