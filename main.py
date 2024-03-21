@@ -1,15 +1,12 @@
-# 78,65,89,86,55,91,64,89
+# sum = 0
+# for i in range(0,101,2):
+#     # print(i)
+#     sum += i
+#     # print(sum)
 
-student_scores = input("Enter student scores: ").split(",")
+# print(sum)
 
-for i in range(0, len(student_scores)):
-    student_scores[i] = int(student_scores[i])
-print(student_scores)
+# list1 = range(0,101,2)
+# print(sum(list1))
 
-# highest_score = 0
-# for score in student_scores:
-#     if score > highest_score:
-#         highest_score = score
-# print(highest_score)
-
-print(f"The highest score in the class is {max(student_scores)}")
+print(sum(range(0,101,2)))
