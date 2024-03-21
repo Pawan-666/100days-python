@@ -1,14 +1,15 @@
-student_lists = input("Enter student heights: ").split(",")
-for n in range(0, len(student_lists)):
-    student_lists[n] = int(student_lists[n])
-print(student_lists)
-print(round(sum(student_lists)/len(student_lists)))
-# j = 0
-# k = 0
-# for i in student_lists:
-#     j += 1
-#     k += int(i)
-# print(j)
-# print(k)
-# avg = k/j
-# print(avg)
+# 78,65,89,86,55,91,64,89
+
+student_scores = input("Enter student scores: ").split(",")
+
+for i in range(0, len(student_scores)):
+    student_scores[i] = int(student_scores[i])
+print(student_scores)
+
+# highest_score = 0
+# for score in student_scores:
+#     if score > highest_score:
+#         highest_score = score
+# print(highest_score)
+
+print(f"The highest score in the class is {max(student_scores)}")
